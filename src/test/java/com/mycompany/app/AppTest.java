@@ -22,4 +22,13 @@ public class AppTest
         App app = new App();
         assertEquals("Hello oylb2026!", app.getMessage());
     }
+
+
+    @Test
+    public void testAppMessage2()
+    {
+        App app = new App();
+        assertEquals("Hello ok!", app.getMessage2(" ok!"));
+    }
 }
+

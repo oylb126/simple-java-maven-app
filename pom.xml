@@ -8,11 +8,20 @@
   <name>my-app</name>
   <url>https://maven.apache.org</url>
   <dependencies>
+    <!-- JUnit 5 Jupiter API -->
     <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-api</artifactId>
-      <version>6.0.1</version>
-      <scope>test</scope>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <version>5.10.0</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- ⚠️ 必须添加：JUnit Platform Launcher（IDE 测试运行器需要） -->
+    <dependency>
+        <groupId>org.junit.platform</groupId>
+        <artifactId>junit-platform-launcher</artifactId>
+        <version>1.10.0</version>
+        <scope>test</scope>
     </dependency>
   </dependencies>
   <properties>
@@ -26,7 +35,7 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.14.1</version>
           <configuration>
-            <release>17</release>
+            <release>21</release>
           </configuration>
         </plugin>
       </plugins>
